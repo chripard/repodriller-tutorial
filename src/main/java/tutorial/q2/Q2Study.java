@@ -17,8 +17,7 @@ public class Q2Study implements Study {
 	public void execute() {
 		new RepositoryMining()
 			.in(GitRepository.singleProject("/Users/mauricioaniche/workspace/metricminer2-tutorial/project/jfreechart"))
-			// TODO colocar os hashs aqui
-			.through(Commits.range("uma-hash", "outra-hash"))
+			.through(Commits.range("bf03fad60a26b27263fc5be23336eabd892f7e59", "5453efc2f0295bc4e36b161982297003da01c14f"))
 			.process(new CommitsWithBugVisitor(), new CSVFile("/Users/mauricioaniche/workspace/metricminer2-tutorial/project/q2.csv"))
 			.mine();
 	}
