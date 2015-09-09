@@ -11,8 +11,8 @@ public class DevelopersVisitor implements CommitVisitor {
 	public void process(SCMRepository repo, Commit commit, PersistenceMechanism writer) {
 		writer.write(
 			commit.getHash(),
-			commit.getCommitter().getName(),
-			commit.getCommitter().getEmail()
+			commit.getAuthor().getName(),
+			commit.getAuthor().getEmail()
 		);
 
 	}
