@@ -1,13 +1,13 @@
 # MetricMiner Tutorial
 
-See www.metricminer.org.br.
+See www.metricminer.org.br
 
-## Q1: Who are the commits?
+## Q1: Who are the committers?
 - Manual: Getting Started
 - Manual: Logging
 
 ## Q2: In how many commits does the word "bug" appear?
-- Manual: Commit Range (por release)
+- Manual: Commit Range (by release)
 - Exporting JAR file via Eclipse
 
 ## Q3: What is the average of modifications per file?
