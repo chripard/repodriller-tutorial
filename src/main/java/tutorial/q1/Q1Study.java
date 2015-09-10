@@ -16,9 +16,9 @@ public class Q1Study implements Study {
 	@Override
 	public void execute() {
 		new RepositoryMining()
-			.in(GitRepository.singleProject("/Users/mauricioaniche/workspace/metricminer2-tutorial/project/jfreechart"))
+			.in(GitRepository.singleProject("/Users/mauricioaniche/Desktop/tutorial/jfreechart-fse"))
 			.through(Commits.all())
-			.process(new DevelopersVisitor(), new CSVFile("/Users/mauricioaniche/workspace/metricminer2-tutorial/project/q1.csv"))
+			.process(new DevelopersVisitor(), new CSVFile("/Users/mauricioaniche/Desktop/tutorial/q1.csv"))
 			.mine();
 	}
 

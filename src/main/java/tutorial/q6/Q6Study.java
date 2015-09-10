@@ -15,11 +15,11 @@ public class Q6Study implements Study {
 	
 	@Override
 	public void execute() {
-		CSVFile csv = new CSVFile("/Users/mauricioaniche/workspace/metricminer2-tutorial/project/q3.csv");
+		CSVFile csv = new CSVFile("/Users/mauricioaniche/Desktop/tutorial/q6.csv");
 		DiffVisitor visitor = new DiffVisitor();
 		
 		new RepositoryMining()
-			.in(GitRepository.singleProject("/Users/mauricioaniche/workspace/metricminer2-tutorial/project/jfreechart"))
+			.in(GitRepository.singleProject("/Users/mauricioaniche/Desktop/tutorial/jfreechart-fse"))
 			.through(Commits.all())
 			.process(visitor, csv)
 			.mine();
