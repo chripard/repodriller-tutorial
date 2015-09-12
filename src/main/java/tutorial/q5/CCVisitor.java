@@ -46,12 +46,6 @@ public class CCVisitor implements CommitVisitor {
 			repo.getScm().reset();
 		}
 		
-		try {
-
-
-		} catch (Throwable t) {
-			throw new RuntimeException(t);
-		}		
 	}
 
 	@Override
