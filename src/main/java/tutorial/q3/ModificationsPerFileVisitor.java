@@ -1,6 +1,6 @@
 package tutorial.q3;
 
-import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 import br.com.metricminer2.domain.Commit;
@@ -15,7 +15,7 @@ public class ModificationsPerFileVisitor implements CommitVisitor {
 	private Map<String, Integer> files;
 	
 	public ModificationsPerFileVisitor() {
-		this.files = new HashMap<String, Integer>();
+		this.files = new Hashtable<String, Integer>();
 	}
 	
 	@Override
