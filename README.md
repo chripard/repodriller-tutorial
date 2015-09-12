@@ -26,3 +26,4 @@ See www.metricminer.org.br
 
 ## Q6: How many additions and removals per commit are there?
 - Manual: Modification
+- Manual: Diff
