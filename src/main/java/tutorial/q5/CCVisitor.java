@@ -33,7 +33,7 @@ public class CCVisitor implements CommitVisitor {
 				JDTCCListener visitor = new JDTCCListener();
 				new JDTRunner().visit(visitor, new ByteArrayInputStream(Utils.readFile(soFile).getBytes()));
 
-				totalCc = visitor.getCc();
+				totalCc += visitor.getCc();
 			}
 			
 			writer.write(
