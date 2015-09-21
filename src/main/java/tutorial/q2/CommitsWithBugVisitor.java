@@ -12,12 +12,10 @@ public class CommitsWithBugVisitor implements CommitVisitor {
 		
 		boolean containsABug = commit.getMsg().contains("bug");
 		
-		if(containsABug) {
 			writer.write(
 				commit.getHash(),
 				containsABug
 			);
-		}
 
 	}
 
