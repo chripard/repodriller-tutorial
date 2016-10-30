@@ -4,11 +4,12 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import br.com.metricminer2.domain.Commit;
-import br.com.metricminer2.persistence.PersistenceMechanism;
-import br.com.metricminer2.scm.CommitVisitor;
-import br.com.metricminer2.scm.RepositoryFile;
-import br.com.metricminer2.scm.SCMRepository;
+import org.repodriller.domain.Commit;
+import org.repodriller.persistence.PersistenceMechanism;
+import org.repodriller.scm.CommitVisitor;
+import org.repodriller.scm.RepositoryFile;
+import org.repodriller.scm.SCMRepository;
+
 import tutorial.utils.Utils;
 
 public class LinesOfCodeVisitor implements CommitVisitor {

@@ -3,12 +3,13 @@ package tutorial.q3;
 import java.util.Hashtable;
 import java.util.Map;
 
-import br.com.metricminer2.domain.Commit;
-import br.com.metricminer2.domain.Modification;
-import br.com.metricminer2.domain.ModificationType;
-import br.com.metricminer2.persistence.PersistenceMechanism;
-import br.com.metricminer2.scm.CommitVisitor;
-import br.com.metricminer2.scm.SCMRepository;
+import org.repodriller.domain.Commit;
+import org.repodriller.domain.Modification;
+import org.repodriller.domain.ModificationType;
+import org.repodriller.persistence.PersistenceMechanism;
+import org.repodriller.scm.CommitVisitor;
+import org.repodriller.scm.SCMRepository;
+
 
 public class ModificationsPerFileVisitor implements CommitVisitor {
 

@@ -1,10 +1,10 @@
-package tutorial.q6;
+package tutorial.q5;
 
-import br.com.metricminer2.domain.Commit;
-import br.com.metricminer2.domain.Modification;
-import br.com.metricminer2.persistence.PersistenceMechanism;
-import br.com.metricminer2.scm.CommitVisitor;
-import br.com.metricminer2.scm.SCMRepository;
+import org.repodriller.domain.Commit;
+import org.repodriller.domain.Modification;
+import org.repodriller.persistence.PersistenceMechanism;
+import org.repodriller.scm.CommitVisitor;
+import org.repodriller.scm.SCMRepository;
 
 public class DiffVisitor implements CommitVisitor {
 

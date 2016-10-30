@@ -1,6 +1,6 @@
-# MetricMiner Tutorial
+# RepoDriller Tutorial
 
-See www.metricminer.org.br
+See www.repodriller.org
 
 ## Q1: Who are the committers?
 - Manual: Getting Started
@@ -20,10 +20,6 @@ See www.metricminer.org.br
 - Manual: Commit Range (monthly)
 - Manual: Getting the current Revision
 
-## Q5: What is the cyclomatic complexity growth?
-- Manual: Parse Code
-- Manual: Getting the Current Revision (head)
-
-## Q6: How many additions and removals per commit are there?
+## Q5: How many additions and removals per commit are there?
 - Manual: Modification
 - Manual: Diff

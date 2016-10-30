@@ -1,9 +1,9 @@
 package tutorial.q1;
 
-import br.com.metricminer2.domain.Commit;
-import br.com.metricminer2.persistence.PersistenceMechanism;
-import br.com.metricminer2.scm.CommitVisitor;
-import br.com.metricminer2.scm.SCMRepository;
+import org.repodriller.domain.Commit;
+import org.repodriller.persistence.PersistenceMechanism;
+import org.repodriller.scm.CommitVisitor;
+import org.repodriller.scm.SCMRepository;
 
 public class DevelopersVisitor implements CommitVisitor {
 
