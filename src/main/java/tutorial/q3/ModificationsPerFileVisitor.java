@@ -19,7 +19,7 @@ public class ModificationsPerFileVisitor implements CommitVisitor {
 		this.files = new Hashtable<String, Integer>();
 	}
 	
-	@Override
+//	@Override
 	public void process(SCMRepository repo, Commit commit, PersistenceMechanism writer) {
 
 		for(Modification m : commit.getModifications()) {
@@ -49,7 +49,7 @@ public class ModificationsPerFileVisitor implements CommitVisitor {
 		
 	}
 
-	@Override
+	//@Override
 	public String name() {
 		return "modifications-per-file";
 	}

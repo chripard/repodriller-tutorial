@@ -8,7 +8,7 @@ import org.repodriller.scm.SCMRepository;
 
 public class DiffVisitor implements CommitVisitor {
 
-	@Override
+	//@Override
 	public void process(SCMRepository repo, Commit commit, PersistenceMechanism writer) {
 		int adds = 0;
 		int removes = 0;
@@ -32,7 +32,7 @@ public class DiffVisitor implements CommitVisitor {
 		
 	}
 
-	@Override
+	//@Override
 	public String name() {
 		return "diff";
 	}

@@ -13,12 +13,12 @@ public class Q1Study implements Study {
 		new RepoDriller().start(new Q1Study());
 	}
 	
-	@Override
+	//@Override
 	public void execute() {
 		new RepositoryMining()
-			.in(GitRepository.singleProject("/Users/mauricioaniche/Desktop/tutorial/jfreechart-fse"))
+			.in(GitRepository.singleProject("C:/Users/dev/Documents/GitHub/repodriller-tutorial"))
 			.through(Commits.all())
-			.process(new DevelopersVisitor(), new CSVFile("/Users/mauricioaniche/Desktop/tutorial/q1.csv"))
+			.process(new DevelopersVisitor(), new CSVFile("/Users/dev/Desktop/tutorial/q1.csv"))
 			.mine();
 	}
 

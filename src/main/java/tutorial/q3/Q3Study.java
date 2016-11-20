@@ -15,18 +15,18 @@ public class Q3Study implements Study {
 		new RepoDriller().start(new Q3Study());
 	}
 	
-	@Override
+	//@Override
 	public void execute() {
 		ModificationsPerFileVisitor visitor = new ModificationsPerFileVisitor();
 		
 		new RepositoryMining()
-			.in(GitRepository.singleProject("/Users/mauricioaniche/Desktop/tutorial/jfreechart-fse"))
+			.in(GitRepository.singleProject("C:/Users/dev/Documents/GitHub/repodriller-tutorial"))
 			.through(Commits.all())
 			.process(visitor)
 			.withThreads(3)
 			.mine();
 		
-		CSVFile csv = new CSVFile("/Users/mauricioaniche/Desktop/tutorial/q3.csv");
+		CSVFile csv = new CSVFile("/Users/dev/Desktop/tutorial/q3.csv");
 		for(Map.Entry<String, Integer> k : visitor.getFiles().entrySet()) {
 			csv.write(
 				k.getKey(),

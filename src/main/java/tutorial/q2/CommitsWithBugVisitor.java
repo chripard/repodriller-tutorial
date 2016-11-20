@@ -7,7 +7,7 @@ import org.repodriller.scm.SCMRepository;
 
 public class CommitsWithBugVisitor implements CommitVisitor {
 
-	@Override
+	//@Override
 	public void process(SCMRepository repo, Commit commit, PersistenceMechanism writer) {
 		
 		boolean containsABug = commit.getMsg().contains("bug");
@@ -19,7 +19,7 @@ public class CommitsWithBugVisitor implements CommitVisitor {
 
 	}
 
-	@Override
+	//@Override
 	public String name() {
 		return "commits-with-bugs";
 	}

@@ -13,13 +13,13 @@ public class Q5Study implements Study {
 		new RepoDriller().start(new Q5Study());
 	}
 	
-	@Override
+	//@Override
 	public void execute() {
-		CSVFile csv = new CSVFile("/Users/mauricioaniche/Desktop/tutorial/q6.csv");
+		CSVFile csv = new CSVFile("/Users/dev/Desktop/tutorial/q6.csv");
 		DiffVisitor visitor = new DiffVisitor();
 		
 		new RepositoryMining()
-			.in(GitRepository.singleProject("/Users/mauricioaniche/Desktop/tutorial/jfreechart-fse"))
+			.in(GitRepository.singleProject("C:/Users/dev/Documents/GitHub/repodriller-tutorial"))
 			.through(Commits.all())
 			.process(visitor, csv)
 			.mine();

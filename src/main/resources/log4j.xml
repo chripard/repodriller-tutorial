@@ -9,12 +9,7 @@
         </layout>
     </appender>
 
-    <category name="br.com.metricminer2">
-        <priority value="INFO"/>
-        <appender-ref ref="main"/>
-    </category>
-
-    <category name="tutorial">
+    <category name="org.repodriller">
         <priority value="INFO"/>
         <appender-ref ref="main"/>
     </category>
