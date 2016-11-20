@@ -13,7 +13,7 @@ public class Q4Study implements Study {
 		new RepoDriller().start(new Q4Study());
 	}
 	
-	@Override
+	//@Override
 	public void execute() {
 		new RepositoryMining()
 			.in(GitRepository.singleProject("C:/Users/dev/Documents/GitHub/repodriller-tutorial"))
