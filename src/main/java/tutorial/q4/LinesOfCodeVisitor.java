@@ -14,7 +14,7 @@ import tutorial.utils.Utils;
 
 public class LinesOfCodeVisitor implements CommitVisitor {
 
-	@Override
+	//@Override
 	public void process(SCMRepository repo, Commit commit, PersistenceMechanism writer) {
 		try {
 			repo.getScm().checkout(commit.getHash());
@@ -44,7 +44,7 @@ public class LinesOfCodeVisitor implements CommitVisitor {
 	}
 
 
-	@Override
+	//@Override
 	public String name() {
 		return "loc-per-commit";
 	}

@@ -16,9 +16,9 @@ public class Q4Study implements Study {
 	@Override
 	public void execute() {
 		new RepositoryMining()
-			.in(GitRepository.singleProject("/Users/mauricioaniche/Desktop/tutorial/jfreechart-fse"))
+			.in(GitRepository.singleProject("C:/Users/dev/Documents/GitHub/repodriller-tutorial"))
 			.through(Commits.monthly(6))
-			.process(new LinesOfCodeVisitor(), new CSVFile("/Users/mauricioaniche/Desktop/tutorial/q4.csv"))
+			.process(new LinesOfCodeVisitor(), new CSVFile("/Users/devs/Desktop/tutorial/q4.csv"))
 			.mine();
 	}
 
