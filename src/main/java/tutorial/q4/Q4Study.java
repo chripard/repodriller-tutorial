@@ -18,7 +18,7 @@ public class Q4Study implements Study {
 		new RepositoryMining()
 			.in(GitRepository.singleProject("C:/Users/dev/Documents/GitHub/repodriller-tutorial"))
 			.through(Commits.monthly(6))
-			.process(new LinesOfCodeVisitor(), new CSVFile("/Users/devs/Desktop/tutorial/q4.csv"))
+			.process(new LinesOfCodeVisitor(), new CSVFile("/Users/dev/Desktop/tutorial/q4.csv"))
 			.mine();
 	}
 
